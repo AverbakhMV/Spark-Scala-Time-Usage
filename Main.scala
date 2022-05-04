@@ -9,7 +9,7 @@ import java.io.File
 
 object Main extends App {
 
-  def main() : Unit = {
+  def main(args: Array[String]) : Unit = {
     implicit val spark : SparkSession= SparkSession
       .builder()
       .master("local[*]")
